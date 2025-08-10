@@ -1,147 +1,87 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Кондитерская Лаванда — свежие десерты, торты и сладости в Чебоксарах">
     <title>Кондитерская Лаванда</title>
     <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #fffafc;
-            color: #333;
-        }
-        header {
-            background-color: #cda4de;
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .hero {
-            background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') no-repeat center/cover;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-            font-size: 2em;
-            font-weight: bold;
-        }
-        .section {
-            padding: 50px 20px;
-            max-width: 1100px;
-            margin: auto;
-            text-align: center;
-        }
-        .products {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-        .product-card {
-            background-color: white;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            overflow: hidden;
-            transition: transform 0.3s;
-        }
-        .product-card:hover {
-            transform: translateY(-5px);
-        }
-        .product-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .product-card h3 {
-            margin: 15px 0 5px;
-        }
-        .product-card p {
-            padding: 0 10px 15px;
-            color: #666;
-        }
-        footer {
-            background-color: #cda4de;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #a06cd5;
-            color: white;
-            border-radius: 25px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-        .btn:hover {
-            background-color: #8a56c2;
-        }
+        body { font-family: Arial, sans-serif; margin:0; padding:0; }
+        header { background:#8a2be2; color:white; padding:15px; display:flex; justify-content:space-between; align-items:center; }
+        nav a { color:white; margin:0 10px; text-decoration:none; font-weight:bold; }
+        nav a.btn { background:white; color:#8a2be2; padding:5px 10px; border-radius:5px; }
+        .hero { background:#e6e6fa; text-align:center; padding:50px 20px; }
+        .hero a.btn { background:#8a2be2; color:white; padding:10px 20px; text-decoration:none; border-radius:5px; font-size:18px; }
+        section { padding:20px; max-width:800px; margin:auto; }
+        form input, form textarea { width:100%; padding:10px; margin:5px 0; }
+        form button { background:#8a2be2; color:white; border:none; padding:10px 20px; cursor:pointer; }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Кондитерская «Лаванда»</h1>
-        <nav>
-            <a href="#about">О нас</a>
-            <a href="#products">Наши десерты</a>
-            <a href="#contacts">Контакты</a>
-        </nav>
-    </header>
 
-    <div class="hero">
-        Волшебный вкус в каждой баночке
-    </div>
+<header>
+    <div>Лаванда</div>
+    <nav>
+        <a href="#about">О нас</a>
+        <a href="#products">Наши десерты</a>
+        <a href="#order" class="btn">Сделать заказ</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
+</header>
 
-    <section id="about" class="section">
-        <h2>О нас</h2>
-        <p>Мы готовим нежные десерты, торты и сладости из натуральных ингредиентов. Вдохновленные ароматом лаванды, мы создаем вкус, который радует душу и сердце.</p>
-    </section>
+<div class="hero">
+    <h1>Волшебный вкус в каждой баночке</h1>
+    <p>Попробуйте наши нежнейшие десерты</p>
+    <a href="#order" class="btn">Сделать заказ</a>
+</div>
 
-    <section id="products" class="section">
-        <h2>Наши десерты</h2>
-        <div class="products">
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b" alt="Десерт в баночке">
-                <h3>Десерт в баночке</h3>
-                <p>Нежный крем и бисквит в стильной баночке. Отличный подарок или угощение.</p>
-            </div>
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1601979031896-4c84961e1f50" alt="Торт Лаванда">
-                <h3>Торт «Лаванда»</h3>
-                <p>Легкий ванильный бисквит с кремом и нотками лаванды.</p>
-            </div>
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1542826438-5ec64d68f73e" alt="Макаронс">
-                <h3>Макаронс</h3>
-                <p>Французское пирожное с разнообразными вкусами.</p>
-            </div>
-        </div>
-    </section>
+<section id="about">
+    <h2>О нас</h2>
+    <p>Мы — кондитерская «Лаванда» из Чебоксар. Готовим вкуснейшие десерты в баночках и торты на заказ.</p>
+</section>
 
-    <section id="contacts" class="section">
-        <h2>Контакты</h2>
-        <p>Чебоксары, ул. Примерная, 10</p>
-        <p>Телефон: <a href="tel:+79270000000">+7 (927) 000-00-00</a></p>
-        <p>Email: <a href="mailto:info@lavanda.ru">info@lavanda.ru</a></p>
-        <a href="https://wa.me/79270000000" class="btn">Написать в WhatsApp</a>
-    </section>
+<section id="products">
+    <h2>Наши десерты</h2>
+    <ul>
+        <li>Чизкейк в баночке — 250 ₽</li>
+        <li>Тирамису — 270 ₽</li>
+        <li>Шоколадный мусс — 240 ₽</li>
+    </ul>
+</section>
 
-    <footer>
-        <p>© 2025 Кондитерская «Лаванда». Все права защищены.</p>
-    </footer>
+<section id="order">
+    <h2>Сделать заказ</h2>
+    <form id="orderForm">
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="tel" name="phone" placeholder="Телефон" required>
+        <textarea name="order" placeholder="Что хотите заказать?" required></textarea>
+        <button type="submit">Отправить</button>
+    </form>
+</section>
+
+<section id="contacts">
+    <h2>Контакты</h2>
+    <p>📞 +7 927 847 24 4</p>
+    <p>📍 г. Чебоксары, ул. Пирогова 1к1</p>
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A87a49c7dbdebb2c626d3bb68f746f71e7b8f53a8d0791e0a47ac5cba0b9d67f4&amp;source=constructor" width="100%" height="300" frameborder="0"></iframe>
+</section>
+
+<script>
+document.getElementById('orderForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    let name = this.name.value;
+    let phone = this.phone.value;
+    let order = this.order.value;
+
+    let token = "8092731027:AAGoe3dRnBwOkXmOAtZj5I4qaLzdD2d-y4c";
+    let chat_id = "1993227663";
+    let text = `Новый заказ:%0AИмя: ${name}%0AТелефон: ${phone}%0AЗаказ: ${order}`;
+
+    fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${text}`)
+        .then(response => alert("Заказ отправлен!"))
+        .catch(error => alert("Ошибка отправки"));
+});
+</script>
+
 </body>
 </html>
